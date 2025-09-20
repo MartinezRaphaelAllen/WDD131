@@ -1,0 +1,12 @@
+#content {
+    margin: 0 auto;
+    text-align: center;
+    background-color: lightgray;
+    padding: 1em;
+    max-width: 900px;
+}
+
+#topics li {
+    text-align: left;
+    padding-left: 200px;
+}
