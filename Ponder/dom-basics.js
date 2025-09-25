@@ -12,5 +12,5 @@ document.body.appendChild(newImage);
 newDiv.innerHTML = "<ul><li>One</li><li>Two</li><li>Three</li></ul>";
 document.body.appendChild(newDiv);
 
-newSection.innerHTML = "<h2>DOM Basics</h2><p>This was added through Javascript</p>"
-document.body.appendChild(newSection)
+newSection.innerHTML = "<h2>DOM Basics</h2><p>This was added through Javascript</p>";
+document.body.appendChild(newSection);
