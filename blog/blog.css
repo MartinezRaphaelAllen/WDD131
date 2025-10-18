@@ -1,0 +1,105 @@
+body{
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container h2 {
+    color:#AF1B3F;
+}
+
+.navMenu, .footerText {
+    margin: 0 auto;
+    border-top: 2px solid #AF1B3F;
+    background-color: #74551a;
+    padding: 1rem;
+    border-bottom: 2px solid #AF1B3F;
+}
+
+.navMenu > ul {
+    display: grid;
+    grid-template-columns:3fr 1fr 1fr;
+    padding-left: 15em;
+    justify-content: end;
+    justify-items: end;
+}
+
+.navMenu li, a {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 1em;
+    font-size: 20px;
+    color: white;
+}
+
+.bookInfo {
+    text-align: right;
+    padding-right: 2em;
+}
+
+.bookDescription {
+    max-height: 580px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.bookDescription img{
+    width: 60%;
+    max-width: 250px;
+}
+
+.bookDescription p {
+    max-width: 420px;
+}
+
+.footerText {
+    margin-top: 5em;
+    color: white;
+    text-align: center;
+}
+
+.skiptocontent a {
+	position: absolute;
+    top: -40px;
+    color: darkgray;
+}
+.skiptocontent a:focus {
+    padding: 15px;
+    background-color: #74551a;
+	top: 0px;
+}
+
+@media screen and (min-width: 1000px) {
+
+    header {
+        margin-bottom: 5em;
+    }
+
+    .navMenu > ul {
+        grid-template-columns: 6fr 1fr 1fr;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    .bookInfo {
+        grid-column: 1/2;
+        border-right: 2px solid #AF1B3F;
+    }
+
+    .bookDescription {
+        grid-column: 2/3;
+    }
+}
