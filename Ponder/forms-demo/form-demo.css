@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display:block;
+}
+
+input, textarea, select {
+  padding: 1em;
+  width: 90%;
+}
+
+textarea {
+  height: 5em;
+}
+
+#submitButton, #resetButton {
+  color: white;
+  padding: 1em;
+  border-radius: 1em;
+  border: none;
+}
+
+#submitButton {
+  background-color: rgb(60, 179, 60);
+}
+
+#resetButton {
+  background-color: red;
+}
+
+.errors > p {
+  border: 1px solid red;
+  padding: 0.5em;
+}
+/* Style the select arrow for Safari */
+select::-webkit-inner-spin-button,
+select::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Style the select arrow for other browsers */
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.hide {
+  display: none; /* Initially hide the credit card input and label */
+}
