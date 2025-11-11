@@ -37,17 +37,20 @@ function OpenModal(e)
     let biggerPhoto = changeimage.split("-")[0] + "-full.jpeg";
     modal.showModal();
     modalImage.setAttribute("src", biggerPhoto);
+    modalImage.setAttribute("alt", "Selected picture focused.");
 }
 
 function CloseWindow()
 {
     modal.close();
     modalImage.removeAttribute("src");
+    modalImage.removeAttribute("alt");
 }
 
 modal.addEventListener('click', (event) => {
     if (event.target === modal) {
         modal.close();
         modalImage.removeAttribute("src");
+        modalImage.removeAttribute("alt");
     }
 });
