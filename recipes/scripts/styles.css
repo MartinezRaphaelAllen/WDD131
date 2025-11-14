@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+ :root {
+ --primary-color: #1B98E0;
+ --secondary-color: #59c3c3;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: "Amatic SC";
+ }
+
+body {
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    margin-bottom: 2em;
+}
+
+hr {
+    color: lightgrey;
+    size: 4px;
+}
+
+#title {
+    display: flex;
+    font-family: var(--secondary-font);
+    justify-content: center;
+    align-items: end;
+    margin: 3em;
+}
+
+#title > h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+#title > img {
+    height: 100%;
+    max-width: 8em;
+}
+
+#searchBar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+#searchBar > input {
+    width: 85%;
+    height: 3em;
+    border-radius: 0.5em 0  0 0.5em;
+}
+
+#submitButton {
+    background-color: transparent;
+    border-radius: 0 0.5em 0.5em 0;
+}
+
+#submitButton > img {
+    max-width: 4em;
+    max-height: 2em;
+}
+
+.contentContainer {
+    margin: 0 1em;
+    padding: 1em;
+    border: 2px solid lightgrey;
+    border-radius: 1em;
+}
+
+.containerContent > h2 {
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.contentDescription {
+    display: none;
+    font-family: var(--primary-font);
+}
+
+.recipeTag {
+    border: 2px solid black;
+    font-family: var(--primary-font);
+    padding: 0.5em;
+    height: fit-content;
+    max-width: fit-content;
+}
+
+footer {
+    display: flex;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    justify-self: center;
+    flex-direction: column;
+}
+
+footer > a {
+    size: 0.6em;
+    text-decoration: none;
+    font-family: var(--primary-font);
+    color: #236388;
+}
+
+.social {
+    text-align: center;
+}
+
+.social a {
+    padding-top: 2em;
+}
+
+.social img {
+    width: 3em;
+}
+
+@media screen and (min-width:600px)
+{
+    hr {
+        width: 98%;
+    }
+
+    .contentContainer img {
+        width: 40%;
+    }
+
+    .contentContainer {
+        margin: 0 4em;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .contentContainer p {
+        display: block;
+    }
+    
+    .containerContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerContent h2 {
+        margin-top: 0.5em;
+    }
+
+    footer {
+        width: 90%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
