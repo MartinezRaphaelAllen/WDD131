@@ -12,7 +12,7 @@
     <meta property="og:url" content="https://martinezraphaelallen.github.io/WDD131/recipes/index.html">
     <meta name="twitter:card" content="images/recipe-book.png">
     <link rel="stylesheet" href="scripts/styles.css">
-    <script src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/main.js" defer></script>
     <title>Recipe Book</title>
 </head>
 <body>
@@ -24,34 +24,14 @@
         <form id="searchBar" action="">
             <input id="search"
             placeholder="Find a recipe">
-        <button type="submit" id="submitButton">
-            <img src="images/search.svg" alt="submit button">
-        </button>
+            <button type="submit" id="submitButton">
+                <img src="images/search.svg" alt="submit button">
+            </button>
         </form>
         <hr>
     </header>
     <main>
         <section id="recipe-list" aria-label="Recipe list and reviews">
-            <!-- use as template for js-->
-            <div class="contentContainer">
-                <image src="images/apple-crisp.jpg" alt="image of an apple crisp"></image>
-                <div class="containerContent">
-                    <p class="recipeTag">Dessert</p>
-                    <h2>APPLE CRISP</h2>
-                    <span
-	                class="rating"
-	                role="img"
-	                aria-label="Rating: 4 out of 5 stars"
-                    >
-	                    <span aria-hidden="true" class="icon-star">⭐</span>
-	                    <span aria-hidden="true" class="icon-star">⭐</span>
-	                    <span aria-hidden="true" class="icon-star">⭐</span>
-	                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
-	                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                    </span>
-                    <p class="contentDescription">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-                </div>
-            </div>
         </section>
     </main>
     <footer>
