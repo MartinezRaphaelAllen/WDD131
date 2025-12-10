@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raphael Allen Martinez">
+    <meta name="description" content="WDD 131 Final Project Checkout Page">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="text/second_page.css">
+    <script src="text/second_page.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+    <header class="checkoutHeader">
+        <h1>Check Out Cart</h1>
+        <img class="cartIcon" src="images/cart.png" alt="Cart Icon">
+    </header>
+
+    <section class="summaryBox">
+        <img id="tierImage" class="tierImage" src="" alt="Tier Image">
+        <div class="tierInfo">
+            <h3 class="tierTitle"></h3>
+            <p class="quantitySelector">
+                <label>Quantity:</label>
+                <select id="quantitySelect">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </p>
+
+            <div class="priceInfo">
+                <p>Price: $<span id="priceValue">0</span></p>
+                <p>Tax: $<span id="taxValue">0</span></p>
+                <p>Total: $<span id="totalValue">0</span></p>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="billingHeader">Billing Information</h2>
+
+    <section class="billingBox">
+        <form id="checkoutForm">
+            <p>
+                <label for="cardType">Credit Card Type:</label>
+                <select id="cardType" name="paymentMethod" required>
+                    <option value="">Select</option>
+                    <option value="Visa">Visa</option>
+                    <option value="MasterCard">MasterCard</option>
+                </select>
+            </p>
+            <div class="row">
+                <p class="hide">
+                    <label>Card Number:</label>
+                    <input id="cardNumber" 
+                    name="creditCardNumber" 
+                    type="text"
+                    pattern="[0-9]{16}"
+                    placeholder="enter your 16 digit credit card number"
+                    required>
+                </p>
+                <div class="smallDigit">
+                    <p class="hide">
+                        <label for="expDate">Exp Date:</label>
+                        <input id="expDate"
+                        name="expDate"
+                        type="text"
+                        placeholder="MM/YY">
+                    </p>
+
+                    <p class="hide">
+                        <label for="secCode">Sec Code:</label>
+                        <input type="text" id="secCode" placeholder="###">
+                    </p>
+                </div>
+            </div>
+            <p class="hide">
+                <label for="phoneInput">Phone Number:</label>
+                <input id="phoneInput"
+                type="text"
+                pattern="[0-9]{10}"
+                placeholder="Enter your 10 digit phone number here"
+                required>
+            </p>
+            <p class="hide">
+                <label>Name:</label>
+                <input type="text" id="nameInput">
+            </p>
+            <p class="hide">
+                <label for="address">Address:</label>
+                <textarea id="address" 
+                name="address" 
+                required></textarea>
+            </p>
+            <div class="payContainer">
+                <button class="payButton" type="button">Pay</button>
+            </div>
+        </form>
+    </section>
+    <section id="thankYouBox" class="thankYouBox hidden">
+        <img src="images/Logo_small.png" alt="Logo">
+        <h2>Thank you for your purchase!</h2>
+    </section>
+    </div>
+    <footer>
+        <img src="images/Logo_small.png" alt="Logo Image">
+        <p>Not a real Site.</p>
+    </footer>
+</body>
+</html>

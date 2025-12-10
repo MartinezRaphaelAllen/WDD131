@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Iceberg&display=swap");
+
+:root {
+  --primary-color: #90A955;
+  --secondary-color: #132A13;
+  --accent1-color: #ECF39E;
+  --accent2-color: #31572C;
+
+  --heading-font: Iceberg;
+  --paragraph-font: "Amatic SC", Helvetica, sans-serif;
+
+  --headline-color-on-white: var(
+    --primary-color
+  ); 
+  --headline-color-on-color: white; 
+  --paragraph-color-on-white: var(
+    --primary-color
+  ); 
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--accent1-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
+}
+
+body {
+    font-family: var(--heading-font);
+    font-weight: bolder;
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 1rem;
+    flex: 1;
+}
+
+footer {
+  display: flex;
+  font-family: var(--heading-font);
+  background-color: var(--accent2-color);
+  font-size: 1em;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.checkoutHeader {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cartIcon {
+    width: 40px;
+}
+
+.summaryBox {
+    border: 2px solid var(--accent2-color);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.tierImage {
+    max-width: 150px;
+    max-width: 150px;
+    align-self: center;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.tierInfo {
+    width: 100%;
+}
+
+.tierTitle {
+    font-size: 1.8em;
+}
+
+.quantitySelector {
+    font-size: 1.5em;
+}
+
+.hide {
+    display: none;
+}
+
+.priceInfo {
+    text-align: right;
+}
+
+.priceInfo p {
+    margin: 0.2em 0;
+}
+
+.billingHeader {
+    margin-top: 2rem;
+}
+
+.billingBox {
+    border: 2px solid #ddd;
+    padding: 1rem;
+}
+
+.billingBox label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.billingBox input {
+    width: 95%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.billingBox textarea {
+    width: 95%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.billingBox select {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.smallDigit {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.smallDigit input {
+    width: 3.4em;
+    text-align: center;
+}
+
+.payButton {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.payButton:hover {
+    background-color: var(--accent1-color);
+}
+
+.thankYouBox {
+    border: 2px solid #ddd;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 650px) {
+
+    .summaryBox {
+        flex-direction: row;
+        gap: 1rem;
+        text-align: left;
+    }
+
+    .tierImage {
+        margin: 0;
+        width: 120px;
+        height: 120px;
+    }
+
+    .tierTitle {
+    font-size: 2.5em;
+    }
+
+    .row {
+        flex-direction: row;
+        gap: 3em;
+    }
+
+    #cardNumber, #phoneInput {
+        width: 100%;
+        min-width: 300px;
+    }
+
+    #phoneInput {
+        max-width: 325px;
+    }
+
+    .smallDigit {
+        align-self: flex-end;
+    }
+
+    .billingBox select {
+        width: 35%;
+        min-width: 300px;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .payContainer {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+    }
+
+    .payButton {
+        width: auto;
+        padding: 0.7rem 2rem;
+    }
+
+    .thankYouBox {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
