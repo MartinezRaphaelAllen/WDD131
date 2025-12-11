@@ -17,9 +17,9 @@ const iconGallery = [
 ];
 
 const imgGallery = [
-    "images/gameplay_1-sm.png",
-    "images/gameplay_2-sm.png",
-    "images/gameplay_3-sm.png"
+    "images/gameplay_1-sm.jpg",
+    "images/gameplay_2-sm.jpg",
+    "images/gameplay_3-sm.jpg"
 ];
 
 const gallery = document.querySelector("#galleryContainer");

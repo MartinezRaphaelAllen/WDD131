@@ -31,7 +31,7 @@ body{
 footer {
   display: flex;
   font-family: var(--heading-font);
-  background-color: var(--accent2-color);
+  background-color: var(--primary-color);
   font-size: 1em;
   justify-content: center;
   flex-direction: column;
@@ -42,7 +42,7 @@ footer {
 .hero {
   position: relative;
   width: 100%;
-  margin: 0 auto;      /* centers the hero block on very large screens */
+  margin: 0 auto;
 }
 
 .hero > img {
@@ -145,7 +145,7 @@ footer {
   grid-row: 2/3;
   justify-self: center;
   align-self: center;
-  height: 3em;
+  height: 6.5em;
   width: 3em;
 }
 
@@ -186,7 +186,7 @@ dialog img {
   grid-row: 2/3;
   justify-self: center;
   align-self: center;
-  height: 3em;
+  height: 6.5em;
   width: 3em;
 }
 
@@ -237,7 +237,12 @@ dialog img {
   }
 
   #galleryContainer button {
-  height: 4em;
+  height: 6em;
+  width: 4em;
+  }
+
+  .tierList > button {
+  height: 6em;
   width: 4em;
   }
 }
